@@ -1,0 +1,9 @@
+.wordsBucket {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border:solid 2px black;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgb(193, 189, 189);
+}

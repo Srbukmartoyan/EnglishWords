@@ -1,0 +1,12 @@
+.word-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px ;
+}
+
+.delete-button {
+    width:54px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
