@@ -7,7 +7,6 @@ import wordsBucketRout from './routes/wordsBucket.js';
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-
 const start = async () => {
     try {
         await mongoose.connect("mongodb://localhost:27017/EnglishWords");
@@ -19,7 +18,7 @@ const start = async () => {
     }
 };
 
-
+app.use(express.static('../client/build'));
 app.use(express.json());
 app.use('/', wordsShopRout);
 app.use('/', wordsBucketRout);
